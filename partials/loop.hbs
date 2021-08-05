@@ -1,12 +1,12 @@
 <article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}}">
-    {{> post-media ratio="horizontal"}}
+    {{> post-media ratio="horizontal"}} {{!post image}}
     <div class="container medium">
-        {{> post-header big_title=true}}
-        {{#if excerpt}}
+        {{> post-header big_title=true}} {{!post title, publish date, read time, tag}}
+        {{#if excerpt}} {{!excerpt}}
             <div class="post-excerpt">
                 {{excerpt words="33"}}
             </div>
         {{/if}}
-        {{> post-footer}}
+        {{> post-footer}} {{!author, 'read now', 'read later'}}
     </div>
 </article>

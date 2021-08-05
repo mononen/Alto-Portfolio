@@ -3,9 +3,11 @@
 <div class="content-area">
     <main class="site-main">
         <div class="post-feed">
-            {{#foreach posts}}
-                {{> "loop"}}
-            {{/foreach}}
+            {{#get "posts" limit="3" filter="tag:homepage" include="tags,authors" as |related|}}
+                    {{#foreach related}}
+                    {{> "loop"}}
+                    {{/foreach}}
+            {{/get}}
         </div>
     </main>
 </div>
