@@ -20,12 +20,12 @@
 <body class="{{body_class}}">
     <div class="site">
         {{> header}}
+        <div class="site-content">
+            {{{body}}} {{!index.hbs}}
+        </div>
         {{#is "home"}}
             {{> featured}}
         {{/is}}
-        <div class="site-content">
-            {{{body}}}
-        </div>
         {{> footer}}
     </div>
 
