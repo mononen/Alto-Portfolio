@@ -5,7 +5,7 @@
         <div class="post-feed">
             {{#get "posts" limit="3" filter="tag:homepage" include="tags,authors" as |related|}}
                     {{#foreach related}}
-                    {{> "loop"}}
+                        {{> "loop"}}
                     {{/foreach}}
             {{/get}}
         </div>
