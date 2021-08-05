@@ -1,16 +1,16 @@
 {
-    "name": "alto",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "alto-Portfolio",
+    "description": "A Modified version of the ghost alto theme, targeted for portfolio use",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Alex Mononen",
+        "email": "alex@mononen.dev",
+        "url": "https://mononen.dev"
     },
     "keywords": [
         "ghost",
